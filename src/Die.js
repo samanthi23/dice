@@ -1,8 +1,8 @@
-import React, { Componenet } from 'react';
+import React, { Component } from 'react';
 
-class Die extends Componenet {
+class Die extends Component {
     render() {
-        return <h1> DIE! </h1>
+        return <i class="fas fa-dice-one"></i>
     }
 }
 
