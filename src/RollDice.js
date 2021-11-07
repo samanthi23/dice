@@ -10,7 +10,11 @@ class RollDice extends Component {
         return (
             <div>
             <Die face={this.state.die1} />
+            <Die face={this.state.die2} />
+
             </div>
             )
     }
 }
+
+export default RollDice;
