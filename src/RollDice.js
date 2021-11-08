@@ -29,7 +29,7 @@ class RollDice extends Component {
         
         
     }
-    
+    /* re-rendering those components with the different values*/
     render() {
         return (
             <div className='RollDice'>
