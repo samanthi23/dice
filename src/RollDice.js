@@ -8,6 +8,9 @@ class RollDice extends Component {
     constructor(props) {
         super(props);
         this.state = { die1: 'one', die2: 'one'}
+        // tell roll() what this is
+        this.roll = this.roll.bind(this);
+        // refers to this individual component
     }
     
     roll() {
@@ -15,6 +18,7 @@ class RollDice extends Component {
         const newDie1 = this.props.sides[Math.floor(Math.random() * this.props.sides.length)];
         const newDie2 = this.props.sides[Math.floor(Math.random() * this.props.sides.length)];
         // set state with new rolls
+        this.setState({die1: newDie1, die2:newDie2});
     }
     
     render() {
